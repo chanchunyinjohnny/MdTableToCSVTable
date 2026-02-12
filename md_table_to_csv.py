@@ -201,19 +201,15 @@ def main() -> None:
     """
     Entry point: scan ./input/ for .md files and convert all tables to CSV.
     """
-    # Validate input directory
-    if not INPUT_DIR.is_dir():
-        print(f"Error: Input directory not found: {INPUT_DIR}")
-        print("Please create an ./input/ directory and place .md files inside it.")
-        sys.exit(1)
+    # Create input and output directories if they don't exist
+    INPUT_DIR.mkdir(parents=True, exist_ok=True)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     md_files = sorted(INPUT_DIR.glob("*.md"))
     if not md_files:
         print(f"No .md files found in {INPUT_DIR}")
+        print("Place your .md files in the ./input/ directory and run again.")
         sys.exit(1)
-
-    # Create output directory (no error if it already exists)
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     print(f"Scanning {len(md_files)} markdown file(s) in {INPUT_DIR}\n")
 
