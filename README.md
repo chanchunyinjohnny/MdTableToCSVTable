@@ -105,6 +105,14 @@ MdTableToCSVTable/
 └── README.md
 ```
 
+## Support This Project
+
+If you find this tool useful, consider supporting its development:
+
+- [GitHub Sponsors](https://github.com/sponsors/chanchunyinjohnny)
+- [Buy Me a Coffee](https://buymeacoffee.com/chanchunyinjohnny)
+- [Ko-fi](https://ko-fi.com/chanchunyinjohnny)
+
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
