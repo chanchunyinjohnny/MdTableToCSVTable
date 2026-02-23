@@ -16,3 +16,6 @@ __pycache__/
 # AI
 .claude/
 CLAUDE.md
+
+# dist
+dist/
